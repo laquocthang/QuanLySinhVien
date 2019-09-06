@@ -5,16 +5,68 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="Css/HeaderStyle.css" rel="stylesheet" />
+    <link href="Css/bootstrap.min.css" rel="stylesheet" />
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <div>
+            <div class="jumbotron text-center" style="margin-bottom: 0">
+                <h1>This is the picture</h1>
+            </div>
+            <nav class="navbar navbar-expand-sm listMenu">
+                <a style="font-size: 22px" class="navbar-brand" href="Index.aspx">Trang chủ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav nav-link">
+                        <%
+                            foreach (var item in LstTheUC)
+                        {
+                            %><li class="nav-item <% if (item.TheID == 2) Response.Write("active"); else Response.Write(""); %>
+                              "><a class='nav-link' href=" <% if (item.TheID == 2) Response.Write("#123"); else Response.Write(item.LinkPage); %> "> <% =item.TitlePage %></a></li> <%
+                        } %>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="container paddingTop">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                        <hr class="d-sm-none"/>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <div class="container paddingTop" style="min-height: 1000px">
+                        <asp:ContentPlaceHolder ID="Content" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+
+            </div>
+            <div class="jumbotron text-center" style="margin-bottom: 0">
+                <p>Footer</p>
+            </div>
+        </div>
     </form>
 </body>
 </html>
