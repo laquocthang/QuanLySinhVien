@@ -16,10 +16,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <div class="jumbotron text-center" style="margin-bottom: 0">
-                <h1>This is the picture</h1>
+            <div style="margin-bottom: 0">
+                <asp:Image runat="server" style="width:100%" ImageUrl="~/Imgs/logo.jpg" />
             </div>
-            <nav class="navbar navbar-expand-sm listMenu">
+            <nav class="nav navbar-expand-sm listMenu">
                 <a style="font-size: 22px" class="navbar-brand" href="Index.aspx">Trang chủ</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>

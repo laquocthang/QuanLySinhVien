@@ -75,6 +75,7 @@
     <Content Include="Css\bootstrap.css" />
     <Content Include="Css\bootstrap.min.css" />
     <Content Include="Css\HeaderStyle.css" />
+    <Content Include="Imgs\logo.jpg" />
     <Content Include="Pages\Index.aspx" />
     <Content Include="Js\bootstrap.bundle.js" />
     <Content Include="Js\bootstrap.bundle.min.js" />
@@ -123,9 +124,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imgs\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
