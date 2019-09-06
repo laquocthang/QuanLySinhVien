@@ -74,15 +74,48 @@
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-8 col-sm-12">
-					<div class="container paddingTop" style="min-height: 1000px">
+					<div class="container paddingTop">
 						<asp:ContentPlaceHolder ID="Content" runat="server">
 						</asp:ContentPlaceHolder>
 					</div>
 				</div>
 
 			</div>
-			<div class="jumbotron text-center" style="margin-bottom: 0">
-				<p>Footer</p>
+			<div class="jumbotron text-center">
+				<footer class="page-footer font-small blue">
+					<div class="container-fluid text-center text-md-left">
+						<div class="row">
+							<div class="col-md-6 mt-md-0 mt-3">
+								<h5 class="text-uppercase">Liên hệ</h5>
+								Nhóm tác giả:
+								<ul>
+									<li>La Quốc Thắng
+										<ul>
+											<li>MSSV: 1610207</li>
+											<li>Email: 1610207@dlu.edu.vn</li>
+										</ul>
+									</li>
+									<li>Nguyễn Thành Quốc
+										<ul>
+											<li>MSSV: 1610191</li>
+											<li>Email: 1610191@dlu.edu.vn</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<hr class="clearfix w-100 d-md-none pb-3" />
+							<div class="col-md-3 mb-md-0 mb-3">
+								<h5 class="text-uppercase">Trang chủ</h5>
+							</div>
+							<div class="col-md-3 mb-md-0 mb-3">
+								<h5 class="text-uppercase">Góp ý</h5>
+							</div>
+						</div>
+					</div>
+					<div class="footer-copyright text-center py-3">
+						© 2019 Copyright: CTK40-ITDLU
+					</div>
+				</footer>
 			</div>
 		</div>
 	</form>
