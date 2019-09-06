@@ -68,21 +68,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Css\bootstrap-grid.css" />
-    <Content Include="Css\bootstrap-grid.min.css" />
-    <Content Include="Css\bootstrap-reboot.css" />
-    <Content Include="Css\bootstrap-reboot.min.css" />
-    <Content Include="Css\bootstrap.css" />
-    <Content Include="Css\bootstrap.min.css" />
-    <Content Include="Css\HeaderStyle.css" />
-    <Content Include="Imgs\logo.jpg" />
+    <Content Include="CSS\bootstrap-grid.css" />
+    <Content Include="CSS\bootstrap-grid.min.css" />
+    <Content Include="CSS\bootstrap-reboot.css" />
+    <Content Include="CSS\bootstrap-reboot.min.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\customstyle.css" />
+    <Content Include="Images\favicon\android-icon-144x144.png" />
+    <Content Include="Images\favicon\android-icon-192x192.png" />
+    <Content Include="Images\favicon\android-icon-36x36.png" />
+    <Content Include="Images\favicon\android-icon-48x48.png" />
+    <Content Include="Images\favicon\android-icon-72x72.png" />
+    <Content Include="Images\favicon\android-icon-96x96.png" />
+    <Content Include="Images\favicon\apple-icon-114x114.png" />
+    <Content Include="Images\favicon\apple-icon-120x120.png" />
+    <Content Include="Images\favicon\apple-icon-144x144.png" />
+    <Content Include="Images\favicon\apple-icon-152x152.png" />
+    <Content Include="Images\favicon\apple-icon-180x180.png" />
+    <Content Include="Images\favicon\apple-icon-57x57.png" />
+    <Content Include="Images\favicon\apple-icon-60x60.png" />
+    <Content Include="Images\favicon\apple-icon-72x72.png" />
+    <Content Include="Images\favicon\apple-icon-76x76.png" />
+    <Content Include="Images\favicon\apple-icon-precomposed.png" />
+    <Content Include="Images\favicon\apple-icon.png" />
+    <Content Include="Images\favicon\browserconfig.xml" />
+    <Content Include="Images\favicon\favicon-16x16.png" />
+    <Content Include="Images\favicon\favicon-32x32.png" />
+    <Content Include="Images\favicon\favicon-96x96.png" />
+    <Content Include="Images\favicon\favicon.ico" />
+    <Content Include="Images\favicon\ms-icon-144x144.png" />
+    <Content Include="Images\favicon\ms-icon-150x150.png" />
+    <Content Include="Images\favicon\ms-icon-310x310.png" />
+    <Content Include="Images\favicon\ms-icon-70x70.png" />
+    <Content Include="Images\logo.jpg" />
     <Content Include="Pages\Index.aspx" />
-    <Content Include="Js\bootstrap.bundle.js" />
-    <Content Include="Js\bootstrap.bundle.min.js" />
-    <Content Include="Js\bootstrap.js" />
-    <Content Include="Js\bootstrap.min.js" />
-    <Content Include="Js\jquery.min.js" />
-    <Content Include="Js\popper.min.js" />
+    <Content Include="JS\bootstrap.bundle.js" />
+    <Content Include="JS\bootstrap.bundle.min.js" />
+    <Content Include="JS\bootstrap.js" />
+    <Content Include="JS\bootstrap.min.js" />
+    <Content Include="JS\jquery.min.js" />
+    <Content Include="JS\popper.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,16 +131,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainMasterPage.Master" />
-    <Content Include="Css\bootstrap-grid.css.map" />
-    <Content Include="Css\bootstrap-grid.min.css.map" />
-    <Content Include="Css\bootstrap-reboot.css.map" />
-    <Content Include="Css\bootstrap-reboot.min.css.map" />
-    <Content Include="Css\bootstrap.css.map" />
-    <Content Include="Css\bootstrap.min.css.map" />
-    <Content Include="Js\bootstrap.bundle.js.map" />
-    <Content Include="Js\bootstrap.bundle.min.js.map" />
-    <Content Include="Js\bootstrap.js.map" />
-    <Content Include="Js\bootstrap.min.js.map" />
+    <Content Include="CSS\bootstrap-grid.css.map" />
+    <Content Include="CSS\bootstrap-grid.min.css.map" />
+    <Content Include="CSS\bootstrap-reboot.css.map" />
+    <Content Include="CSS\bootstrap-reboot.min.css.map" />
+    <Content Include="CSS\bootstrap.css.map" />
+    <Content Include="CSS\bootstrap.min.css.map" />
+    <Content Include="JS\bootstrap.bundle.js.map" />
+    <Content Include="JS\bootstrap.bundle.min.js.map" />
+    <Content Include="JS\bootstrap.js.map" />
+    <Content Include="JS\bootstrap.min.js.map" />
+    <Content Include="Images\favicon\manifest.json" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\laquocthang - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">

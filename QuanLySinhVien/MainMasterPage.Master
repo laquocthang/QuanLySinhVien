@@ -4,69 +4,87 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <link href="Css/HeaderStyle.css" rel="stylesheet" />
-    <link href="Css/bootstrap.min.css" rel="stylesheet" />
-    <script src="Js/jquery.min.js"></script>
-    <script src="Js/popper.min.js"></script>
-    <script src="Js/bootstrap.min.js"></script>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+	<title>Hệ thống Quản lý Sinh viên</title>
+	<link href="Css/customstyle.css" rel="stylesheet" />
+	<link href="Css/bootstrap.min.css" rel="stylesheet" />
+	<script src="Js/jquery.min.js"></script>
+	<script src="Js/popper.min.js"></script>
+	<script src="Js/bootstrap.min.js"></script>
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+	<link rel="apple-touch-icon" sizes="57x57" href="~/Images/favicon/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="~/Images/favicon//apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="~/Images/favicon//apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="~/Images/favicon//apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="~/Images/favicon//apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="~/Images/favicon//apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="~/Images/favicon//apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="~/Images/favicon//apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="~/Images/favicon//apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="192x192" href="~/Images/favicon//android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="~/Images/favicon//favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="~/Images/favicon//favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="~/Images/favicon//favicon-16x16.png" />
+	<link rel="manifest" href="~/Images/favicon//manifest.json" />
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="~/Images/favicon//ms-icon-144x144.png" />
+	<meta name="theme-color" content="#ffffff" />
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <div style="margin-bottom: 0">
-                <asp:Image runat="server" style="width:100%" ImageUrl="~/Imgs/logo.jpg" />
-            </div>
-            <nav class="nav navbar-expand-sm listMenu">
-                <a style="font-size: 22px" class="navbar-brand" href="Index.aspx">Trang chủ</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav nav-link">
-                        <%
-                            foreach (var item in LstTheUC)
-                        {
-                            %><li class="nav-item <% if (item.TheID == 2) Response.Write("active"); else Response.Write(""); %>
-                              "><a class='nav-link' href=" <% if (item.TheID == 2) Response.Write("#123"); else Response.Write(item.LinkPage); %> "> <% =item.TitlePage %></a></li> <%
-                        } %>
-                    </ul>
-                </div>
-            </nav>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <div class="container paddingTop">
-                        <ul class="nav nav-pills flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Disabled</a>
-                            </li>
-                        </ul>
-                        <hr class="d-sm-none"/>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-8 col-sm-12">
-                    <div class="container paddingTop" style="min-height: 1000px">
-                        <asp:ContentPlaceHolder ID="Content" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </div>
-                </div>
+	<form id="form1" runat="server">
+		<div>
+			<div style="margin-bottom: 0">
+				<asp:Image runat="server" Style="width: 100%" ImageUrl="~/Images/logo.jpg" />
+			</div>
+			<nav class="navbar navbar-expand-sm navbar-dark listMenu">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item active"><a class="nav-link" style="padding-left: 0px" href="/">Trang chủ</a></li>
+						<%
+							foreach (var item in LstTheUC)
+							{
+						%><li class="nav-item <% if (item.TheID == 0) Response.Write("active"); else Response.Write(""); %>
+                              "><a class='nav-link' href=" <% if (item.TheID == 0) Response.Write("#123"); else Response.Write(item.LinkPage); %> "><% =item.TitlePage %></a></li>
+						<%
+							} %>
+					</ul>
+				</div>
+			</nav>
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-lg-3 col-md-4 col-sm-12">
+					<div class="container paddingTop">
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Active</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="#">Disabled</a>
+							</li>
+						</ul>
+						<hr class="d-sm-none" />
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-8 col-sm-12">
+					<div class="container paddingTop" style="min-height: 1000px">
+						<asp:ContentPlaceHolder ID="Content" runat="server">
+						</asp:ContentPlaceHolder>
+					</div>
+				</div>
 
-            </div>
-            <div class="jumbotron text-center" style="margin-bottom: 0">
-                <p>Footer</p>
-            </div>
-        </div>
-    </form>
+			</div>
+			<div class="jumbotron text-center" style="margin-bottom: 0">
+				<p>Footer</p>
+			</div>
+		</div>
+	</form>
 </body>
 </html>
