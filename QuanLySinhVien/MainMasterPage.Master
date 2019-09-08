@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 	<title>Hệ thống Quản lý Sinh viên</title>
-	<link href="Css/customstyle.css" rel="stylesheet" />
+	<link href="Css/customStyles.css" rel="stylesheet" />
 	<link href="Css/bootstrap.min.css" rel="stylesheet" />
 	<script src="Js/jquery.min.js"></script>
 	<script src="Js/popper.min.js"></script>

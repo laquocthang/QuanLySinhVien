@@ -68,13 +68,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\animate.min.css" />
+    <Content Include="CSS\beyond.min.css" />
     <Content Include="CSS\bootstrap-grid.css" />
     <Content Include="CSS\bootstrap-grid.min.css" />
     <Content Include="CSS\bootstrap-reboot.css" />
     <Content Include="CSS\bootstrap-reboot.min.css" />
     <Content Include="CSS\bootstrap.css" />
     <Content Include="CSS\bootstrap.min.css" />
-    <Content Include="CSS\customstyle.css" />
+    <Content Include="CSS\customStyles.css" />
     <Content Include="Images\favicon\android-icon-144x144.png" />
     <Content Include="Images\favicon\android-icon-192x192.png" />
     <Content Include="Images\favicon\android-icon-36x36.png" />
@@ -102,6 +104,7 @@
     <Content Include="Images\favicon\ms-icon-310x310.png" />
     <Content Include="Images\favicon\ms-icon-70x70.png" />
     <Content Include="Images\logo.jpg" />
+    <Content Include="Images\logo_DLU.png" />
     <Content Include="Pages\Index.aspx" />
     <Content Include="JS\bootstrap.bundle.js" />
     <Content Include="JS\bootstrap.bundle.min.js" />
@@ -109,6 +112,7 @@
     <Content Include="JS\bootstrap.min.js" />
     <Content Include="JS\jquery.min.js" />
     <Content Include="JS\popper.min.js" />
+    <Content Include="Pages\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +129,13 @@
     </Compile>
     <Compile Include="MainMasterPage.Master.designer.cs">
       <DependentUpon>MainMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticVariable.cs" />
