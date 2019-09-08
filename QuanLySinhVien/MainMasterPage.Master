@@ -29,6 +29,17 @@
 	<meta name="msapplication-TileColor" content="#ffffff" />
 	<meta name="msapplication-TileImage" content="~/Images/favicon/ms-icon-144x144.png" />
 	<meta name="theme-color" content="#ffffff" />
+	<script>
+		$(document).ready(function () {
+			var url = window.location;
+			$('.collapse .navbar-nav').find('.active').removeClass('active');
+			$('.collapse .navbar-nav li a').each(function () {
+				if (this.href == url) {
+					$(this).parent().addClass('active');
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 	<form id="form1" runat="server">
@@ -42,13 +53,11 @@
 				</button>
 				<div class="collapse navbar-collapse" id="collapsibleNavbar">
 					<ul class="navbar-nav mx-auto">
-						<li class="nav-item active"><a class="nav-link" style="padding-left: 0px" href="/">Trang chủ</a></li>
-						<%
-							foreach (var item in QuanLySinhVien.UseCaseList.listUseCase)
-							{
-						%><li class="nav-item"><a class='nav-link' href="/<% Response.Write(item.Link); %>"><%=item.Title %></a></li>
-						<%
-							} %>
+						<li class="nav-item"><a class="nav-link" href="/">Trang chủ</a></li>
+						<%foreach (var item in QuanLySinhVien.UseCaseList.listUseCase)
+							{%>
+						<li class="nav-item"><a class='nav-link' href="/<% Response.Write(item.Link); %>"><%=item.Title %></a></li>
+						<%}%>
 					</ul>
 				</div>
 			</nav>
