@@ -44,10 +44,9 @@
 					<ul class="navbar-nav mx-auto">
 						<li class="nav-item active"><a class="nav-link" style="padding-left: 0px" href="/">Trang chủ</a></li>
 						<%
-							foreach (var item in LstTheUC)
+							foreach (var item in QuanLySinhVien.UseCaseList.listUseCase)
 							{
-						%><li class="nav-item <% if (item.TheID == 0) Response.Write("active"); else Response.Write(""); %>
-                              "><a class='nav-link' href=" <% if (item.TheID == 0) Response.Write("#123"); else Response.Write(item.LinkPage); %> "><% =item.TitlePage %></a></li>
+						%><li class="nav-item"><a class='nav-link' href="/<% Response.Write(item.Link); %>"><%=item.Title %></a></li>
 						<%
 							} %>
 					</ul>

@@ -2,48 +2,55 @@
 
 namespace QuanLySinhVien
 {
-	public class StaticVariable
+	public class UseCase
 	{
-		public static List<TheUseCase> LIST_UC = new List<TheUseCase>() {
-			new TheUseCase() {
-				LinkPage = "#",
-				TitlePage = "Quản lý sinh viên",
-				TheID = 1
+		public string Link { get; set; }
+		public string Title { get; set; }
+		public int ID { get; set; }
+	}
+
+	public class UseCaseList
+	{
+		public static List<UseCase> listUseCase = new List<UseCase>() {
+			new UseCase() {
+				Link = "Student",
+				Title = "Quản lý sinh viên",
+				ID = 1
 			},
-			new TheUseCase() {
-				LinkPage = "#",
-				TitlePage = "Quản lý lớp học",
-				TheID = 2
+			new UseCase() {
+				Link = "Class",
+				Title = "Quản lý lớp học",
+				ID = 2
 			},
-			new TheUseCase() {
-				LinkPage = "#",
-				TitlePage = "Quản lý ý kiến - thảo luận",
-				TheID = 3
+			new UseCase() {
+				Link = "Discussion",
+				Title = "Quản lý ý kiến - thảo luận",
+				ID = 3
 			},
-			new TheUseCase() {
-				LinkPage = "#",
-				TitlePage = "Quản lý khảo sát",
-				TheID = 4
+			new UseCase() {
+				Link = "Survey",
+				Title = "Quản lý khảo sát",
+				ID = 4
 			},
-			new TheUseCase() {
-				LinkPage = "#",
-				TitlePage = "Quản lý điểm rèn luyện",
-				TheID = 5
+			new UseCase() {
+				Link = "Conduct",
+				Title = "Quản lý điểm rèn luyện",
+				ID = 5
 			},
-			new TheUseCase() {
-				LinkPage = "#",
-				TitlePage = "Quản lý tài nguyên học tập",
-				TheID = 6
+			new UseCase() {
+				Link = "Resource",
+				Title = "Quản lý tài nguyên học tập",
+				ID = 6
 			},
-			new TheUseCase() {
-				LinkPage = "#",
-				TitlePage = "Quản lý hoạt động phong trào",
-				TheID = 7
+			new UseCase() {
+				Link = "Activity",
+				Title = "Quản lý hoạt động phong trào",
+				ID = 7
 			},
-			new TheUseCase() {
-				LinkPage = "#",
-				TitlePage = "Quản lý thông báo",
-				TheID = 8
+			new UseCase() {
+				Link = "News",
+				Title = "Quản lý thông báo",
+				ID = 8
 			},
 		};
 	}
