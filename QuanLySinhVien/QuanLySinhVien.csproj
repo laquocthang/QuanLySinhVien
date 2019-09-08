@@ -68,15 +68,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CSS\animate.min.css" />
-    <Content Include="CSS\beyond.min.css" />
-    <Content Include="CSS\bootstrap-grid.css" />
-    <Content Include="CSS\bootstrap-grid.min.css" />
-    <Content Include="CSS\bootstrap-reboot.css" />
-    <Content Include="CSS\bootstrap-reboot.min.css" />
-    <Content Include="CSS\bootstrap.css" />
-    <Content Include="CSS\bootstrap.min.css" />
-    <Content Include="CSS\customStyles.css" />
+    <Content Include="_CSS\animate.min.css" />
+    <Content Include="_CSS\beyond.min.css" />
+    <Content Include="_CSS\bootstrap-grid.css" />
+    <Content Include="_CSS\bootstrap-grid.min.css" />
+    <Content Include="_CSS\bootstrap-reboot.css" />
+    <Content Include="_CSS\bootstrap-reboot.min.css" />
+    <Content Include="_CSS\bootstrap.css" />
+    <Content Include="_CSS\bootstrap.min.css" />
+    <Content Include="_CSS\customStyles.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\favicon\android-icon-144x144.png" />
     <Content Include="Images\favicon\android-icon-192x192.png" />
@@ -146,12 +146,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainMasterPage.Master" />
-    <Content Include="CSS\bootstrap-grid.css.map" />
-    <Content Include="CSS\bootstrap-grid.min.css.map" />
-    <Content Include="CSS\bootstrap-reboot.css.map" />
-    <Content Include="CSS\bootstrap-reboot.min.css.map" />
-    <Content Include="CSS\bootstrap.css.map" />
-    <Content Include="CSS\bootstrap.min.css.map" />
+    <Content Include="_CSS\bootstrap-grid.css.map" />
+    <Content Include="_CSS\bootstrap-grid.min.css.map" />
+    <Content Include="_CSS\bootstrap-reboot.css.map" />
+    <Content Include="_CSS\bootstrap-reboot.min.css.map" />
+    <Content Include="_CSS\bootstrap.css.map" />
+    <Content Include="_CSS\bootstrap.min.css.map" />
     <Content Include="JS\bootstrap.bundle.js.map" />
     <Content Include="JS\bootstrap.bundle.min.js.map" />
     <Content Include="JS\bootstrap.js.map" />
