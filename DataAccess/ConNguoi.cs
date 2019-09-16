@@ -35,11 +35,12 @@ namespace DataAccess
 		public string HoTen { get; set; }
 		public DateTime NgaySinh { get; set; }
 		public string CMND { get; set; }
-		public GioiTinh gioiTinh { get; set; }
+		public GioiTinh GioiTinh { get; set; }
 		public DiaChi ThuongTru { get; set; }
 		public DiaChi TamTru { get; set; }
 		public List<String> SoDT { get; set; }
 		public List<String> Email { get; set; }
 		public List<ConNguoi> ThanNhan { get; set; }
+		public TaiKhoan TaiKhoan { get; set; }
 	}
 }

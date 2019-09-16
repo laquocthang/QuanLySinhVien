@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-	public class QuanLyDiemRenLuyen
+	public class DiemRenLuyen
 	{
 	}
 }
