@@ -1,13 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    public abstract class ConNguoi
-    {
+	/// <summary>
+	/// Giới tính
+	/// </summary>
+	public enum GioiTinh
+	{
+		Nam,
+		Nữ,
+		Khác
+	}
 
-    }
+	/// <summary>
+	/// Tôn giáo
+	/// </summary>
+	public enum TonGiao
+	{
+		Không,
+		PhậtGiáo,
+		CôngGiáo,
+		CaoĐài,
+		TinLành,
+		HoàHảo,
+		Khác
+	}
+
+	/// <summary>
+	/// Con người
+	/// </summary>
+	public abstract class ConNguoi
+	{
+		public string HoTen { get; set; }
+		public DateTime NgaySinh { get; set; }
+		public string CMND { get; set; }
+		public GioiTinh gioiTinh { get; set; }
+		public DiaChi ThuongTru { get; set; }
+		public DiaChi TamTru { get; set; }
+		public List<String> SoDT { get; set; }
+		public List<String> Email { get; set; }
+		public List<ConNguoi> ThanNhan { get; set; }
+	}
 }
