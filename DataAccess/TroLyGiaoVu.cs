@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
+	/// <summary>
+	/// Trợ lý giáo vụ khoa
+	/// </summary>
 	public class TroLyGiaoVu : ConNguoi
 	{
 	}

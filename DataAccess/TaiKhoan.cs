@@ -1,5 +1,8 @@
 ﻿namespace DataAccess
 {
+	/// <summary>
+	/// Loại tài khoản
+	/// </summary>
 	public enum LoaiTaiKhoan
 	{
 		SinhViên,
@@ -9,10 +12,13 @@
 		TrợLýGiáoVụ
 	}
 
+	/// <summary>
+	/// Tài khoản
+	/// </summary>
 	public class TaiKhoan
 	{
 		public string Username { get; set; }
 		public string Password { get; set; }
-		LoaiTaiKhoan loai { get; set; }
+		LoaiTaiKhoan Loai { get; set; }
 	}
 }

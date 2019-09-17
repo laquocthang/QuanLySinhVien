@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
+	/// <summary>
+	/// Bí thư đoàn của khoa
+	/// </summary>
 	public class BiThuDoan : GiangVien
 	{
+
 	}
 }
