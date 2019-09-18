@@ -72,19 +72,26 @@
 				</div>
 			</nav>
 			<div class="row" style="margin-top: 10px;">
-				<div class="col-lg-3 col-md-4 col-sm-12">
+				<%if (!this.Page.ToString().Contains("index"))
+					{ %>
+				<div class="col-lg-3 col-md-4 col-sm-12" id="nav">
 					<div class="container paddingTop">
 						<asp:ContentPlaceHolder ID="Navigation" runat="server">
 						</asp:ContentPlaceHolder>
 					</div>
 				</div>
-				<div class="col-lg-9 col-md-8 col-sm-12">
+				<%}%>
+				<div <%if (!this.Page.ToString().Contains("index"))
+					{%>class="col-lg-9 col-md-8 col-sm-12"
+					<%}
+					else
+					{%>style="width:100%;"
+					<%}%>>
 					<div class="container paddingTop">
 						<asp:ContentPlaceHolder ID="Content" runat="server">
 						</asp:ContentPlaceHolder>
 					</div>
 				</div>
-
 			</div>
 			<div class="text-center" style="margin-top: 50px; background: #f1ebeb; padding: 1rem 1rem">
 				<footer class="page-footer font-small">
