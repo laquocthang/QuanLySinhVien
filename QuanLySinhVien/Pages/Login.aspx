@@ -6,11 +6,23 @@
 <head runat="server">
 	<title>Đăng nhập</title>
 	<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-	<link href="../CSS/customStyles.css" rel="stylesheet" />
 	<link href="../CSS/beyond.min.css" rel="stylesheet" />
 	<link href="../CSS/animate.min.css" rel="stylesheet" />
 	<script src="../JS/jquery.min.js"></script>
 	<script src="../JS/bootstrap.js"></script>
+	<style>
+		body::before {
+			background-image: url('https://source.unsplash.com/random/1600x900') !important;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#loginForm {
+			opacity: 0.95;
+		}
+	</style>
 </head>
 <body>
 	<form id="loginForm" runat="server" method="post">
@@ -37,7 +49,7 @@
 					<asp:TextBox runat="server" ID="txt_password" CssClass="form-control" TextMode="Password" />
 				</div>
 				<div class="loginbox-textbox">
-					<asp:Button runat="server" ID="btn_login" CssClass="btn btn-primary btn-block" Text="Đăng nhập"/>
+					<asp:Button runat="server" ID="btn_login" CssClass="btn btn-primary btn-block" Text="Đăng nhập" />
 				</div>
 			</div>
 		</div>
