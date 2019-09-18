@@ -1,6 +1,7 @@
 ﻿body {
-	padding: 0px 10px;
-	width: 98%;
+	margin: 0;
+	padding:0 25px;
+	line-height:1.5;
 }
 
 .listMenu {
@@ -35,6 +36,6 @@
 }
 
 .font-small {
-	font-size: 14px;
+	font-size: 15px;
 }
 

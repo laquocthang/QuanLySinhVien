@@ -78,6 +78,16 @@
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\customStyles.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\dhdalat\dhdalat1.jpg" />
+    <Content Include="Images\dhdalat\dhdalat10.jpg" />
+    <Content Include="Images\dhdalat\dhdalat2.jpg" />
+    <Content Include="Images\dhdalat\dhdalat3.jpg" />
+    <Content Include="Images\dhdalat\dhdalat4.jpg" />
+    <Content Include="Images\dhdalat\dhdalat5.jpg" />
+    <Content Include="Images\dhdalat\dhdalat6.jpg" />
+    <Content Include="Images\dhdalat\dhdalat7.jpg" />
+    <Content Include="Images\dhdalat\dhdalat8.jpg" />
+    <Content Include="Images\dhdalat\dhdalat9.jpg" />
     <Content Include="Images\favicon\android-icon-144x144.png" />
     <Content Include="Images\favicon\android-icon-192x192.png" />
     <Content Include="Images\favicon\android-icon-36x36.png" />

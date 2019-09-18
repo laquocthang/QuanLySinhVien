@@ -10,6 +10,7 @@
 	<script src="Js/jquery.min.js"></script>
 	<script src="Js/popper.min.js"></script>
 	<script src="Js/bootstrap.min.js"></script>
+	<script src="JS/bootstrap.js"></script>
 	<asp:ContentPlaceHolder ID="head" runat="server">
 	</asp:ContentPlaceHolder>
 	<link rel="apple-touch-icon" sizes="57x57" href="~/Images/favicon/apple-icon-57x57.png" />
@@ -73,21 +74,8 @@
 			<div class="row" style="margin-top: 10px;">
 				<div class="col-lg-3 col-md-4 col-sm-12">
 					<div class="container paddingTop">
-						<ul class="nav nav-pills flex-column">
-							<li class="nav-item">
-								<a class="nav-link active" href="#">Active</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link disabled" href="#">Disabled</a>
-							</li>
-						</ul>
-						<hr class="d-sm-none" />
+						<asp:ContentPlaceHolder ID="Navigation" runat="server">
+						</asp:ContentPlaceHolder>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-8 col-sm-12">
@@ -98,40 +86,38 @@
 				</div>
 
 			</div>
-			<div class="jumbotron text-center">
-				<footer class="page-footer font-small blue">
+			<div class="text-center" style="margin-top: 50px; background: #f1ebeb; padding: 1rem 1rem">
+				<footer class="page-footer font-small">
 					<div class="container-fluid text-center text-md-left">
 						<div class="row">
 							<div class="col-md-6 mt-md-0 mt-3">
 								<h5 class="text-uppercase">Liên hệ</h5>
 								Nhóm tác giả:
 								<ul>
-									<li>La Quốc Thắng
+									<li><a href="https://www.facebook.com/quocthang0507" target="_blank">La Quốc Thắng</a>
 										<ul>
 											<li>MSSV: 1610207</li>
-											<li>Email: 1610207@dlu.edu.vn</li>
+											<li>Email: <a href="mailto:1610207@dlu.edu.vn">1610207@dlu.edu.vn</a></li>
 										</ul>
 									</li>
-									<li>Nguyễn Thành Quốc
+									<li><a href="https://www.facebook.com/nthanhquoc" target="_blank">Nguyễn Thành Quốc</a>
 										<ul>
 											<li>MSSV: 1610191</li>
-											<li>Email: 1610191@dlu.edu.vn</li>
+											<li>Email: <a href="maito:1610191@dlu.edu.vn">1610191@dlu.edu.vn</a></li>
 										</ul>
 									</li>
 								</ul>
 							</div>
 							<hr class="clearfix w-100 d-md-none pb-3" />
 							<div class="col-md-3 mb-md-0 mb-3">
-								<h5 class="text-uppercase">Trang chủ</h5>
+								<h5 class="text-uppercase"><a href="/">Trang chủ</a></h5>
 							</div>
 							<div class="col-md-3 mb-md-0 mb-3">
 								<h5 class="text-uppercase">Góp ý</h5>
 							</div>
 						</div>
 					</div>
-					<div class="footer-copyright text-center py-3">
-						© 2019 Copyright: CTK40-ITDLU
-					</div>
+					<div class="footer-copyright text-center">© 2019 Copyright: CTK40-ITDLU </div>
 				</footer>
 			</div>
 		</div>

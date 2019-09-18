@@ -19,6 +19,6 @@
 	{
 		public string Username { get; set; }
 		public string Password { get; set; }
-		LoaiTaiKhoan Loai { get; set; }
+		public LoaiTaiKhoan Loai { get; set; }
 	}
 }
