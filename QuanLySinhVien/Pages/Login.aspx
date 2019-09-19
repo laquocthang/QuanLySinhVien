@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 	<title>Đăng nhập</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="../CSS/bootstrap.min.css" rel="stylesheet" />
 	<link href="../CSS/beyond.min.css" rel="stylesheet" />
 	<link href="../CSS/animate.min.css" rel="stylesheet" />
@@ -26,7 +27,7 @@
 </head>
 <body>
 	<form id="loginForm" runat="server" method="post">
-		<div class="login-container animated fadeInDown">
+		<div class="login-container animated fadeInDown" style="">
 			<div class="loginbox bg-white">
 				<div class="loginbox-title" style="font-family: sans-serif;"></div>
 				<div class="loginbox-social">
