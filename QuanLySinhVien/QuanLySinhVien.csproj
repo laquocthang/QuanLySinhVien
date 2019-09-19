@@ -77,6 +77,7 @@
     <Content Include="CSS\bootstrap.css" />
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\customStyles.css" />
+    <Content Include="CSS\specialStyles.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\dhdalat\dhdalat1.jpg" />
     <Content Include="Images\dhdalat\dhdalat10.jpg" />
@@ -116,6 +117,7 @@
     <Content Include="Images\favicon\ms-icon-70x70.png" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\logo_DLU.png" />
+    <Content Include="Pages\404.aspx" />
     <Content Include="Pages\Activity.aspx" />
     <Content Include="Pages\Class.aspx" />
     <Content Include="Pages\Conduct.aspx" />
@@ -132,11 +134,20 @@
     <Content Include="Pages\Resource.aspx" />
     <Content Include="Pages\Student.aspx" />
     <Content Include="Pages\Survey.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Activity.aspx.cs">
       <DependentUpon>Activity.aspx</DependentUpon>

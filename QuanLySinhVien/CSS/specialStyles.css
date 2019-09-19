@@ -1,0 +1,74 @@
+﻿body {
+	background-image: url('https://source.unsplash.com/random/1600x900');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Titillium Web', sans-serif;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container,
+.container > .row,
+.container > .row > div {
+	height: 100%;
+}
+
+#countUp {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+	#countUp .cover .number {
+		font-size: 120px;
+		font-weight: 900;
+	}
+
+		#countUp .cover .number + .text {
+			margin: 0;
+		}
+
+	#countUp .cover .text {
+		font-weight: 300;
+		font-size: 18pt;
+		text-align: center;
+	}
+
+.cover {
+	background-color: #808080;
+	opacity: 0.75;
+	text-align: center;
+	height: auto;
+	line-height: 1.5;
+	padding: 15px;
+}
+
+a:link {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

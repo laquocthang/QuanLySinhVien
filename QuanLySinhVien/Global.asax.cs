@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Web;
 using System.Web.Routing;
+using System.Web.UI;
 
 namespace QuanLySinhVien
 {
@@ -17,6 +19,7 @@ namespace QuanLySinhVien
 			routes.MapPageRoute("route-resource", "Resource", "~/Pages/Resource.aspx");
 			routes.MapPageRoute("route-student", "Student", "~/Pages/Student.aspx");
 			routes.MapPageRoute("route-survey", "Survey", "~/Pages/Survey.aspx");
+			routes.MapPageRoute("route-404", "404", "~/Pages/404.aspx");
 		}
 
 		protected void Application_Start(object sender, EventArgs e)
@@ -41,7 +44,25 @@ namespace QuanLySinhVien
 
 		protected void Application_Error(object sender, EventArgs e)
 		{
+			// Code that runs when an unhandled error occurs
+			Exception ex = HttpContext.Current.Server.GetLastError();
+			if (ex.InnerException != null)
+			{
+				ex = ex.InnerException;
+			}
+			if (ex is HttpException)
+			{
+				if (((HttpException)ex).GetHttpCode() == 404)
+				{
+					Response.Redirect("~/404");
+				}
+				else
+				{
+					Response.Redirect("/");
+				}
+			}
 
+			HttpContext.Current.Server.ClearError();
 		}
 
 		protected void Session_End(object sender, EventArgs e)

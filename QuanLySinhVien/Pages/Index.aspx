@@ -5,16 +5,22 @@
 <%--<asp:Content ID="content_nav" ContentPlaceHolderID="Navigation" runat="server">
 </asp:Content>--%>
 <asp:Content ID="content_main" ContentPlaceHolderID="Content" runat="server">
-	<div class="container" style="text-align: center; display: block; margin:0 auto;">
+	<div class="container" style="text-align: center; display: block; margin: 0 auto;">
 		<h4 class="mb-3">Trường Đại học Đà Lạt</h4>
 		<p>Trường Đại học Đà Lạt là một trường công lập được thành lập theo Quyết định số 426/TTg ngày 27 tháng 10 năm 1976 của Thủ tướng Chính phủ nước Cộng hòa xã hội chủ nghĩa Việt Nam trên cơ sở Viện Đại học Đà Lạt, một trường tư thục thành lập trước 1975 và bắt đầu đào tạo đại học từ niên khóa 1958 – 1959.</p>
 		<div id="myCarousel" class="carousel slide border" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<%for (int i = 0; i < 10; i++)
+					{ %>
+				<li data-target="#myCarousel" data-slider-to="<%=i%>" class="<%=i == 0 ? "active" : ""%>"></li>
+				<%}%>
+			</ol>
 			<div class="carousel-inner">
 				<%for (int i = 1; i <= 10; i++)
 					{%>
 				<div class="carousel-item <%=i==1?"active":""%>">
 					<%string fileName = string.Format("../Images/dhdalat/dhdalat{0}.jpg", i);%>
-					<img class="d-block w-100" src="<%=fileName%>" alt="" />
+					<img class="d-block w-100" src="<%=fileName%>" alt="" >
 				</div>
 				<%}%>
 			</div>

@@ -5,13 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 	<title>Hệ thống Quản lý Sinh viên</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link href="Css/bootstrap.min.css" rel="stylesheet" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="Css/customStyles.css" rel="stylesheet" />
-	<script src="Js/bootstrap.min.js"></script>
+	<link href="Css/bootstrap.min.css" rel="stylesheet" />
 	<script src="JS/bootstrap.js"></script>
 	<script src="Js/jquery.min.js"></script>
 	<script src="Js/popper.min.js"></script>
+	<script src="Js/bootstrap.min.js"></script>
 	<asp:ContentPlaceHolder ID="head" runat="server">
 	</asp:ContentPlaceHolder>
 	<link rel="apple-touch-icon" sizes="57x57" href="~/Images/favicon/apple-icon-57x57.png" />
@@ -58,13 +59,13 @@
 			<div style="margin-bottom: 0">
 				<asp:Image runat="server" Style="width: 100%" ImageUrl="~/Images/logo.jpg" />
 			</div>
-			<nav class="navbar navbar-expand-sm navbar-dark listMenu">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<nav class="navbar navbar-expand-md navbar-dark listMenu">
+				<a class="navbar-brand" href="/">Trang chủ</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav mx-auto">
-						<li class="nav-item"><a class="nav-link" href="/">Trang chủ</a></li>
+					<ul class="nav navbar-nav mx-auto">
 						<%foreach (var item in QuanLySinhVien.UseCaseList.listUseCase)
 							{%>
 						<li class="nav-item"><a class='nav-link' href="/<% Response.Write(item.Link); %>"><%=item.Title %></a></li>
@@ -101,20 +102,16 @@
 							<div class="col-md-6 mt-md-0 mt-3">
 								<h5 class="text-uppercase">Liên hệ</h5>
 								Nhóm tác giả:
-								<ul>
-									<li><a href="https://www.facebook.com/quocthang0507" target="_blank">La Quốc Thắng</a>
-										<ul>
-											<li>MSSV: 1610207</li>
-											<li>Email: <a href="mailto:1610207@dlu.edu.vn">1610207@dlu.edu.vn</a></li>
-										</ul>
-									</li>
-									<li><a href="https://www.facebook.com/nthanhquoc" target="_blank">Nguyễn Thành Quốc</a>
-										<ul>
-											<li>MSSV: 1610191</li>
-											<li>Email: <a href="maito:1610191@dlu.edu.vn">1610191@dlu.edu.vn</a></li>
-										</ul>
-									</li>
-								</ul>
+								<div>
+									<span><a href="https://www.facebook.com/quocthang0507" target="_blank">La Quốc Thắng</a></span>
+									<span>MSSV: 1610207</span>
+									<span><a href="mailto:1610207@dlu.edu.vn">1610207@dlu.edu.vn</a></span>
+								</div>
+								<div>
+									<span><a href="https://www.facebook.com/nthanhquoc" target="_blank">Nguyễn Thành Quốc</a></span>
+									<span>MSSV: 1610191</span>
+									<span>Email: <a href="maito:1610191@dlu.edu.vn">1610191@dlu.edu.vn</a></span>
+								</div>
 							</div>
 							<hr class="clearfix w-100 d-md-none pb-3" />
 							<div class="col-md-3 mb-md-0 mb-3">
@@ -122,10 +119,13 @@
 							</div>
 							<div class="col-md-3 mb-md-0 mb-3">
 								<h5 class="text-uppercase">Góp ý</h5>
+								<asp:TextBox ID="tbx_MailGopY" runat="server" TextMode="Email" Width="100%" placeholder="Nhập địa chỉ email của bạn" TabIndex="1" CssClass="form-control"></asp:TextBox><br>
+								<asp:TextBox ID="tbx_GopY" runat="server" TextMode="MultiLine" Width="100%" placeholder="Nhập nội dung góp ý" TabIndex="2" CssClass="form-control" Rows="5"></asp:TextBox><br>
+								<asp:Button ID="btn_GopY" runat="server" Text="Gửi" CssClass="btn btn-primary btn-sm" />
 							</div>
+							<div class="footer-copyright text-center">© 2019 Copyright: CTK40-ITDLU </div>
 						</div>
 					</div>
-					<div class="footer-copyright text-center">© 2019 Copyright: CTK40-ITDLU </div>
 				</footer>
 			</div>
 		</div>

@@ -1,7 +1,9 @@
 ﻿body {
 	margin: 0;
-	padding: 0 25px;
+	padding: 0 10px;
 	line-height: 1.5;
+	width: 100%;
+	height: 100%;
 }
 
 .listMenu {
@@ -21,11 +23,6 @@
 	.listMenu ul {
 		border-radius: 3px;
 		margin-left: 10px;
-	}
-
-	.listMenu a:hover {
-		/*color: orange;
-		padding: 0;*/
 	}
 
 	.listMenu .active {
