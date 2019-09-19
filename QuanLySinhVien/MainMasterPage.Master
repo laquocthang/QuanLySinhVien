@@ -96,7 +96,7 @@
 				</div>
 			</div>
 			<div class="text-center" style="margin-top: 50px; background: #f1ebeb; padding: 1rem 1rem">
-				<footer class="page-footer font-small">
+				<footer class="page-footer font-small pt-4">
 					<div class="container-fluid text-center text-md-left">
 						<div class="row">
 							<div class="col-md-6 mt-md-0 mt-3">
@@ -110,7 +110,7 @@
 								<div>
 									<span><a href="https://www.facebook.com/nthanhquoc" target="_blank">Nguyễn Thành Quốc</a></span>
 									<span>MSSV: 1610191</span>
-									<span>Email: <a href="maito:1610191@dlu.edu.vn">1610191@dlu.edu.vn</a></span>
+									<span>Email: <a href="mailto:1610191@dlu.edu.vn">1610191@dlu.edu.vn</a></span>
 								</div>
 							</div>
 							<hr class="clearfix w-100 d-md-none pb-3" />
@@ -119,13 +119,13 @@
 							</div>
 							<div class="col-md-3 mb-md-0 mb-3">
 								<h5 class="text-uppercase">Góp ý</h5>
-								<asp:TextBox ID="tbx_MailGopY" runat="server" TextMode="Email" Width="100%" placeholder="Nhập địa chỉ email của bạn" TabIndex="1" CssClass="form-control"></asp:TextBox><br>
-								<asp:TextBox ID="tbx_GopY" runat="server" TextMode="MultiLine" Width="100%" placeholder="Nhập nội dung góp ý" TabIndex="2" CssClass="form-control" Rows="5"></asp:TextBox><br>
+								<asp:TextBox ID="tbx_MailGopY" runat="server" TextMode="Email" Width="100%" placeholder="Nhập địa chỉ email của bạn" TabIndex="1" CssClass="form-control"></asp:TextBox>
+								<asp:TextBox ID="tbx_GopY" runat="server" TextMode="MultiLine" Width="100%" placeholder="Nhập nội dung góp ý" TabIndex="2" CssClass="form-control" Rows="5"></asp:TextBox>
 								<asp:Button ID="btn_GopY" runat="server" Text="Gửi" CssClass="btn btn-primary btn-sm" />
 							</div>
-							<div class="footer-copyright text-center">© 2019 Copyright: CTK40-ITDLU </div>
 						</div>
 					</div>
+					<div class="footer-copyright text-center">© 2019 Copyright: <a href="https://www.facebook.com/groups/1500340049992190/" target="_blank">CTK40-ITDLU</a></div>
 				</footer>
 			</div>
 		</div>
