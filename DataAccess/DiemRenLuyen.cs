@@ -41,5 +41,26 @@ namespace DataAccess
 		public HọcKỳ HocKy { get; set; }
 		public int NamHoc { get; set; }
 		public ChiTietDiemRenLuyen ChiTiet { get; set; }
-	}
+
+        public static int Add(DiemRenLuyen data)
+        {
+            return 0;
+        }
+        public static bool Update(DiemRenLuyen data)
+        {
+            return false;
+        }
+        public static bool Delete(DiemRenLuyen data)
+        {
+            return false;
+        }
+        public static List<DiemRenLuyen> GetAll()
+        {
+            return null;
+        }
+        public static List<DiemRenLuyen> GetList(Condition condition)
+        {
+            return null;
+        }
+    }
 }

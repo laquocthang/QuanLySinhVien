@@ -30,7 +30,7 @@ namespace DataAccess
 	/// <summary>
 	/// Con người
 	/// </summary>
-	public abstract class ConNguoi
+	public abstract class ConNguoi  
 	{
 		public string HoTen { get; set; }
 		public DateTime NgaySinh { get; set; }
@@ -42,5 +42,7 @@ namespace DataAccess
 		public List<String> Email { get; set; }
 		public List<ConNguoi> ThanNhan { get; set; }
 		public TaiKhoan TaiKhoan { get; set; }
-	}
+        
+        
+    }
 }

@@ -16,5 +16,27 @@ namespace DataAccess
 		public DateTime ThoiGianKT { get; set; } //Thời gian kết thúc niên khoá
 		public GVCN GVCN { get; set; }
 		public List<SinhVien> DanhSachSV { get; set; }
-	}
+
+
+        public static int Add(LopHoc data)
+        {
+            return 0;
+        }
+        public static bool Update(LopHoc data)
+        {
+            return false;
+        }
+        public static bool Delete(LopHoc data)
+        {
+            return false;
+        }
+        public static List<LopHoc> GetAll()
+        {
+            return null;
+        }
+        public static List<LopHoc> GetList(Condition condition)
+        {
+            return null;
+        }
+    }
 }

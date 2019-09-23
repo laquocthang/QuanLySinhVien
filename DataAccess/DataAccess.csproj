@@ -43,7 +43,9 @@
   <ItemGroup>
     <Compile Include="BiThuDoan.cs" />
     <Compile Include="ChiTietDiemRenLuyen.cs" />
+    <Compile Include="Condition.cs" />
     <Compile Include="ConNguoi.cs" />
+    <Compile Include="DataAccessControls.cs" />
     <Compile Include="DiaChi.cs" />
     <Compile Include="GiangVien.cs" />
     <Compile Include="GVCN.cs" />
@@ -60,7 +62,10 @@
     <Compile Include="YKien.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{0a047b68-6599-4388-ac25-0f769361a074}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

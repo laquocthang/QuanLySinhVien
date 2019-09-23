@@ -27,5 +27,27 @@ namespace DataAccess
 		public DateTime NgayBD { get; set; }
 		public DateTime NgayKT { get; set; }
 		public string MoTa { get; set; }
-	}
+
+
+        public static int Add(ThongBao data)
+        {
+            return 0;
+        }
+        public static bool Update(ThongBao data)
+        {
+            return false;
+        }
+        public static bool Delete(ThongBao data)
+        {
+            return false;
+        }
+        public static List<ThongBao> GetAll()
+        {
+            return null;
+        }
+        public static List<ThongBao> GetList(Condition condition)
+        {
+            return null;
+        }
+    }
 }
