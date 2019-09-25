@@ -15,7 +15,7 @@ namespace DataAccess
 		public string MoTa { get; set; }
 		public DateTime NgayBatDau { get; set; }
 		public DateTime NgayKetThuc { get; set; }
-
+        public List<SinhVien> DanhSachSVThamGia { get; set; }
         public static int Add(HoatDongPhongTrao data)
         {
             return 0;
@@ -35,6 +35,14 @@ namespace DataAccess
         public static List<HoatDongPhongTrao> GetList(Condition condition)
         {
             return null;
+        }
+        public bool AddJoiner(SinhVien sv)
+        {
+            return false;
+        }
+        public bool End()
+        {
+            return true;
         }
     }
 }
