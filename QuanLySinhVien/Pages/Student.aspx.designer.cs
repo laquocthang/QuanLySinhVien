@@ -13,12 +13,12 @@ namespace QuanLySinhVien.Pages {
     public partial class Student {
         
         /// <summary>
-        /// cdcatalog control.
+        /// tbl_SinhVien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList cdcatalog;
+        protected global::System.Web.UI.WebControls.DataList tbl_SinhVien;
     }
 }
