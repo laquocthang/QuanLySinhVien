@@ -7,13 +7,14 @@ namespace QuanLySinhVien.Pages
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			LoadStudentList();
+			if (!IsPostBack)
+				LoadStudentList();
 		}
 
 		private void LoadStudentList()
 		{
-			tbl_SinhVien.DataSource = LoadData.CreateDataSource();
-			tbl_SinhVien.DataBind();
+			grid_SinhVien.DataSource = LoadData.CreateDataSourceFromFile(Server.MapPath(@"Data\CTK43.csv"));
+			grid_SinhVien.DataBind();
 		}
 
 	}

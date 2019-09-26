@@ -20,29 +20,24 @@
 	<hr class="d-sm-none" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-	Đây là nội dung
-    <asp:DataList ID="tbl_SinhVien" runat="server" RepeatColumns="5" Width="100%">
+	<%--	<asp:DataList ID="tbl_SinhVien" CellPadding="5" CellSpacing="5" RepeatDirection="Vertical" RepeatLayout="Table" RepeatColumns="6" Width="100%" CssClass="table" runat="server">
 		<HeaderTemplate>
-			<table>
-				<tr>
-					<th>STT</th>
-					<th>MSSV</th>
-					<th>Họ và tên</th>
-					<th>Ngày sinh</th>
-					<th>Chức năng</th>
-				</tr>
+			<th>STT</th>
+			<th>MSSV</th>
+			<th>Họ và tên đệm</th>
+			<th>Tên</th>
+			<th>Ngày sinh</th>
+			<th>Thao tác</th>
 		</HeaderTemplate>
 		<ItemTemplate>
-			<tr>
-				<td><%#DataBinder.Eval(Container.DataItem, "STT") %></td>
-				<td><%#DataBinder.Eval(Container.DataItem, "MSSV") %></td>
-				<td><%#DataBinder.Eval(Container.DataItem, "HoVaTen") %></td>
-				<td><%#DataBinder.Eval(Container.DataItem, "NgaySinh") %></td>
-				<td><%#DataBinder.Eval(Container.DataItem, "ChucNang") %></td>
-			</tr>
+			<td><%#DataBinder.Eval(Container.DataItem, "STT") %></td>
+			<td><%#DataBinder.Eval(Container.DataItem, "MSSV") %></td>
+			<td><%#DataBinder.Eval(Container.DataItem, "Ho") %></td>
+			<td><%#DataBinder.Eval(Container.DataItem,"Ten") %></td>
+			<td><%#DataBinder.Eval(Container.DataItem, "NgaySinh") %></td>
+			<td><%#DataBinder.Eval(Container.DataItem, "ThaoTac") %></td>
 		</ItemTemplate>
-		<FooterTemplate>
-			</table>
-		</FooterTemplate>
-	</asp:DataList>
+	</asp:DataList>--%>
+	<asp:GridView ID="grid_SinhVien" runat="server" CssClass="table table-bordered table-striped">
+	</asp:GridView>
 </asp:Content>
