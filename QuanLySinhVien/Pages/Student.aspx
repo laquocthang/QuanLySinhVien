@@ -19,4 +19,30 @@
 	<hr class="d-sm-none" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+    Đây là nội dung
+    <asp:DataList id="cdcatalog" runat="server"
+        RepeatColumns="5">
+        <HeaderTemplate>
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th>MSSV</th>
+                    <th>Họ và tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Chức năng</th>
+                </tr>
+        </HeaderTemplate>
+        <ItemTemplate>
+            <tr>
+                <td><%#DataBinder.Eval(Container.DataItem, "STT") %></td>
+                <td><%#DataBinder.Eval(Container.DataItem, "MSSV") %></td>
+                <td><%#DataBinder.Eval(Container.DataItem, "HoVaTen") %></td>
+                <%--<td><%#DataBinder.Eval(Container.DataItem, "NgaySinh") %></td>
+                <td><%#DataBinder.Eval(Container.DataItem, "ChucNang") %></td>--%>
+            </tr>
+        </ItemTemplate>
+        <FooterTemplate>
+            </table>
+        </FooterTemplate>
+    </asp:DataList>
 </asp:Content>

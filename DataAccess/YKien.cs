@@ -17,8 +17,15 @@ namespace DataAccess
 		public List<ConNguoi> TanThanh { get; set; } //Người tán thành
 		public List<ConNguoi> KhongTanThanh { get; set; } //Người không tán thành
 		public bool DuocXemXet { get; set; } //Ý kiến được xem xét cấp khoa
-
-
+        
+        public bool Confirm()
+        {
+            return false;
+        }
+        public bool Pass(bool pass = true)
+        {
+            return false;
+        }
         public static int Add(YKien data)
         {
             return 0;
@@ -38,6 +45,10 @@ namespace DataAccess
         public static List<YKien> GetList(Condition condition)
         {
             return null;
+        }
+        public void ExportFile()
+        {
+
         }
     }
 }

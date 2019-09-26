@@ -37,13 +37,12 @@ namespace DataAccess
         {
             return false;
         }
-        public static List<TaiKhoan> GetAll()
+        public static void Login(TaiKhoan tk)
         {
-            return null;
         }
-        public static List<TaiKhoan> GetList(Condition condition)
+        public bool Logout()
         {
-            return null;
+            return true;
         }
     }
 }
