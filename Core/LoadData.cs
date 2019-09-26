@@ -7,19 +7,19 @@ namespace DataAccess
 {
 	public class LoadData
 	{
-		public static ICollection CreateDataSourceFromFile(string path)
+		public static DataSet CreateDataSourceFromFile(string path)
 		{
 			DataTable table = new DataTable();
 			DataRow row;
 			table.Columns.Add(new DataColumn("STT", typeof(Int32)));
 			table.Columns.Add(new DataColumn("MSSV", typeof(string)));
-			table.Columns.Add(new DataColumn("Họ", typeof(string)));
-			table.Columns.Add(new DataColumn("Tên", typeof(string)));
-			table.Columns.Add(new DataColumn("Ngày Sinh", typeof(string)));
-			table.Columns.Add(new DataColumn("Thao Tác", typeof(string)));
+			table.Columns.Add(new DataColumn("Ho", typeof(string)));
+			table.Columns.Add(new DataColumn("Ten", typeof(string)));
+			table.Columns.Add(new DataColumn("NgaySinh", typeof(string)));
+			table.Columns.Add(new DataColumn("ThaoTac", typeof(string)));
 			using (var reader = new StreamReader(path))
 			{
-				int index = 0;
+				int index = 1;
 				while (!reader.EndOfStream)
 				{
 					var line = reader.ReadLine();
@@ -35,8 +35,9 @@ namespace DataAccess
 					index++;
 				}
 			}
-			DataView view = new DataView(table);
-			return view;
+			DataSet data = new DataSet();
+			data.Tables.Add(table);
+			return data;
 		}
 
 	}

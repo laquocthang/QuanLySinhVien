@@ -38,6 +38,14 @@
 			<td><%#DataBinder.Eval(Container.DataItem, "ThaoTac") %></td>
 		</ItemTemplate>
 	</asp:DataList>--%>
-	<asp:GridView ID="grid_SinhVien" runat="server" CssClass="table table-bordered table-striped">
+	<asp:GridView ID="grid_SinhVien" runat="server" AllowSorting="True" AutoGenerateColumns="false" CssClass="table table-bordered table-striped" OnSorting="grid_SinhVien_Sorting" OnRowCreated="grid_SinhVien_RowCreated">
+		<Columns>
+			<asp:BoundField DataField="STT" HeaderText="Số thứ tự" SortExpression="STT" />
+			<asp:BoundField DataField="MSSV" HeaderText="Mã số sinh viên" SortExpression="MSSV" />
+			<asp:BoundField DataField="Ho" HeaderText="Họ và tên đệm" SortExpression="Ho" />
+			<asp:BoundField DataField="Ten" HeaderText="Tên" SortExpression="Ten" />
+			<asp:BoundField DataField="NgaySinh" HeaderText="Ngày sinh" />
+			<asp:BoundField DataField="ThaoTac" HeaderText="Chức năng" />
+		</Columns>
 	</asp:GridView>
 </asp:Content>
