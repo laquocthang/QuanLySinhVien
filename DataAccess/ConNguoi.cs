@@ -42,6 +42,10 @@ namespace DataAccess
 		public List<String> Email { get; set; }
 		public List<ConNguoi> ThanNhan { get; set; }
 		public TaiKhoan TaiKhoan { get; set; }
-		
+        
+        public static List<ConNguoi> GetListByAddress()
+        {
+            return null;
+        }
     }
 }
