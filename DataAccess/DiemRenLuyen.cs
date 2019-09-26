@@ -36,6 +36,7 @@ namespace DataAccess
 	/// </summary>
 	public class DiemRenLuyen
 	{
+        public SinhVien SV { get; set; }
 		public int TongDiem { get; set; }
 		public XếpLoạiRL XepLoai { get; set; }
 		public HọcKỳ HocKy { get; set; }
@@ -47,6 +48,10 @@ namespace DataAccess
             return 0;
         }
         public static bool Update(DiemRenLuyen data)
+        {
+            return false;
+        }
+        public bool Update(ChiTietDiemRenLuyen data)
         {
             return false;
         }
