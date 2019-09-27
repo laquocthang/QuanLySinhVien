@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using DataAccess;
+using System;
+using System.Data;
 
 namespace QuanLySinhVien.Pages
 {
@@ -11,7 +8,16 @@ namespace QuanLySinhVien.Pages
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			if (!IsPostBack)
+				LoadClassList();
+		}
 
+		private void LoadClassList()
+		{
+			DataTable dtClasses = (DataTable)LoadData.LoadClassListFromFile(Server.MapPath(@"Data\Classes.csv"));
+			DataView dvClasses = new DataView(dtClasses);
+			grid_LopHoc.DataSource = dvClasses;
+			grid_LopHoc.DataBind();
 		}
 	}
 }

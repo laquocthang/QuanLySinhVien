@@ -248,6 +248,7 @@
     <Content Include="JS\bootstrap.min.js.map" />
     <Content Include="Images\favicon\manifest.json" />
     <Content Include="Data\CTK43.csv" />
+    <Content Include="Data\Classes.csv" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\laquocthang - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">

@@ -32,19 +32,20 @@ namespace QuanLySinhVien.Pages
 
 		private void LoadStudentList()
 		{
-			DataSet dsStudents = new DataSet();
-			if (ViewState["StudentsDS"] != null)
-				dsStudents = (DataSet)ViewState["StudentsDS"];
+			//DataSet dsStudents = new DataSet();
+			DataTable dtStudents = new DataTable();
+			if (ViewState["StudentsDT"] != null)
+				dtStudents = (DataTable)ViewState["StudentsDT"];
 			else
 			{
-				dsStudents = LoadData.CreateDataSourceFromFile(Server.MapPath(@"Data\CTK43.csv"));
-				ViewState["StudentsDS"] = dsStudents;
+				dtStudents = (DataTable)LoadData.LoadStudentsListFromFile(Server.MapPath(@"Data\CTK43.csv"));
+				ViewState["StudentsDT"] = dtStudents;
 			}
 			string sort = string.Empty;
 			if (null != sortExpression && string.Empty != sortExpression)
 				sort = string.Format("{0} {1}", sortExpression, (sortDirection == SortDirection.Descending) ? "DESC" : "ASC");
-			DataView dataView = new DataView(dsStudents.Tables[0], string.Empty, sort, DataViewRowState.CurrentRows);
-			grid_SinhVien.DataSource = dataView;
+			DataView dvStudents = new DataView(dtStudents, string.Empty, sort, DataViewRowState.CurrentRows);
+			grid_SinhVien.DataSource = dvStudents;
 			grid_SinhVien.DataBind();
 		}
 

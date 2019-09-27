@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Data;
 using System.IO;
 
@@ -7,7 +6,7 @@ namespace DataAccess
 {
 	public class LoadData
 	{
-		public static DataSet CreateDataSourceFromFile(string path)
+		public static Object LoadStudentsListFromFile(string path)
 		{
 			DataTable table = new DataTable();
 			DataRow row;
@@ -16,6 +15,8 @@ namespace DataAccess
 			table.Columns.Add(new DataColumn("Ho", typeof(string)));
 			table.Columns.Add(new DataColumn("Ten", typeof(string)));
 			table.Columns.Add(new DataColumn("NgaySinh", typeof(string)));
+			table.Columns.Add(new DataColumn("Lop", typeof(string)));
+			table.Columns.Add(new DataColumn("GioiTinh", typeof(string)));
 			table.Columns.Add(new DataColumn("ThaoTac", typeof(string)));
 			using (var reader = new StreamReader(path))
 			{
@@ -30,15 +31,40 @@ namespace DataAccess
 					row[2] = values[1]; //Ho
 					row[3] = values[2]; //Ten
 					row[4] = values[3]; //NgaySinh
-					row[5] = "";        //Chua co gi het!
+					row[5] = values[4]; //Lop
+					row[6] = values[5]; //Gioi tinh
+					row[7] = "";        //Chua co gi het!
 					table.Rows.Add(row);
 					index++;
 				}
 			}
-			DataSet data = new DataSet();
-			data.Tables.Add(table);
-			return data;
+			//DataSet data = new DataSet();
+			//data.Tables.Add(table);
+			return table;
 		}
 
+		public static Object LoadClassListFromFile(string path)
+		{
+			DataTable table = new DataTable();
+			DataRow row;
+			table.Columns.Add(new DataColumn("STT", typeof(Int32)));
+			table.Columns.Add(new DataColumn("Lop", typeof(string)));
+			table.Columns.Add(new DataColumn("ThaoTac", typeof(string)));
+			using (var reader = new StreamReader(path))
+			{
+				int index = 1;
+				while (!reader.EndOfStream)
+				{
+					var line = reader.ReadLine();
+					row = table.NewRow();
+					row[0] = index;
+					row[1] = line;
+					row[2] = "";
+					table.Rows.Add(row);
+					index++;
+				}
+			}
+			return table;
+		}
 	}
 }

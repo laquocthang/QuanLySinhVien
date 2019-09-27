@@ -45,6 +45,8 @@
 			<asp:BoundField DataField="Ho" HeaderText="Họ và tên đệm" SortExpression="Ho" />
 			<asp:BoundField DataField="Ten" HeaderText="Tên" SortExpression="Ten" />
 			<asp:BoundField DataField="NgaySinh" HeaderText="Ngày sinh" />
+			<asp:BoundField DataField="Lop" HeaderText="Lớp" />
+			<asp:BoundField DataField="GioiTinh" HeaderText="Giới tính" />
 			<asp:BoundField DataField="ThaoTac" HeaderText="Chức năng" />
 		</Columns>
 	</asp:GridView>
