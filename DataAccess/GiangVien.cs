@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccess
 {
@@ -46,7 +43,7 @@ namespace DataAccess
 	/// <summary>
 	/// Giảng viên
 	/// </summary>
-	public abstract class GiangVien
+	public abstract class GiangVien : ConNguoi
 	{
 		public string MaGV { get; set; }
 		public BộMôn BoMon { get; set; }
@@ -55,25 +52,25 @@ namespace DataAccess
 		public DateTime NgayBatDau { get; set; }
 		public bool ConDay { get; set; } //Tình trạng giảng dạy của GV: Còn dạy hay Không còn dạy
 
-        public static int Add(GiangVien data)
-        {
-            return 0;
-        }
-        public static bool Update(GiangVien data)
-        {
-            return false;
-        }
-        public static bool Delete(GiangVien data)
-        {
-            return false;
-        }
-        public static List<GiangVien> GetAll()
-        {
-            return null;
-        }
-        public static List<GiangVien> GetList(Condition condition)
-        {
-            return null;
-        }
-    }
+		public static int Add(GiangVien data)
+		{
+			return 0;
+		}
+		public static bool Update(GiangVien data)
+		{
+			return false;
+		}
+		public static bool Delete(GiangVien data)
+		{
+			return false;
+		}
+		public static List<GiangVien> GetAll()
+		{
+			return null;
+		}
+		public static List<GiangVien> GetList(Condition condition)
+		{
+			return null;
+		}
+	}
 }
