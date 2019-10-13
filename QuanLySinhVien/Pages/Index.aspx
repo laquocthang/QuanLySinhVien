@@ -20,7 +20,7 @@
 					{%>
 				<div class="carousel-item <%=i==1?"active":""%>">
 					<%string fileName = string.Format("../Images/dhdalat/dhdalat{0}.jpg", i);%>
-					<img class="d-block w-100" src="<%=fileName%>" alt="" >
+					<img class="d-block w-100" src="<%=fileName%>" alt="" />
 				</div>
 				<%}%>
 			</div>
