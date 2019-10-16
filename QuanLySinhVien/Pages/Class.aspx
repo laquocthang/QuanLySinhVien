@@ -5,16 +5,22 @@
 <asp:Content ID="content_nav" ContentPlaceHolderID="Navigation" runat="server">
 	<ul class="nav nav-pills flex-column">
 		<li class="nav-item">
-			<a class="nav-link active" href="#">Active</a>
+			<a class="nav-link active" href="#">Xem danh sách lớp học</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+			<a class="nav-link" href="#">Thêm lớp học</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+			<a class="nav-link" href="#">Xóa lớp học</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link disabled" href="#">Disabled</a>
+			<a class="nav-link" href="#">Thay đổi thông tin lớp học</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Tìm kiếm lớp học</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Xuất danh sách ra file</a>
 		</li>
 	</ul>
 	<hr class="d-sm-none" />

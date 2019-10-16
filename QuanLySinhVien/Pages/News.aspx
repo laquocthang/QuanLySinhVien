@@ -4,16 +4,19 @@
 <asp:Content ID="content_nav" ContentPlaceHolderID="Navigation" runat="server">
 	<ul class="nav nav-pills flex-column">
 		<li class="nav-item">
-			<a class="nav-link active" href="#">Active</a>
+			<a class="nav-link active" href="#">Xem danh sách thông báo</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+			<a class="nav-link" href="#">Thêm thông báo</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+			<a class="nav-link" href="#">Xóa thông báo</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link disabled" href="#">Disabled</a>
+			<a class="nav-link" href="#">Cập nhật thông báo</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Tìm kiếm thông báo</a>
 		</li>
 	</ul>
 	<hr class="d-sm-none" />

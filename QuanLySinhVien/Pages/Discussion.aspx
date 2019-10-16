@@ -4,16 +4,31 @@
 <asp:Content ID="content_nav" ContentPlaceHolderID="Navigation" runat="server">
 	<ul class="nav nav-pills flex-column">
 		<li class="nav-item">
-			<a class="nav-link active" href="#">Active</a>
+			<a class="nav-link active" href="#">Xem danh sách ý kiến</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+			<a class="nav-link" href="#">Gửi ý kiến - thảo luận</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+			<a class="nav-link" href="#">Kiểm duyệt ý kiến</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link disabled" href="#">Disabled</a>
+			<a class="nav-link" href="#">Bình chọn ý kiến</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Bình luận</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Tiếp nhận ý kiến</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Tìm kiếm</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Xóa ý kiến</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Xuất danh sách ra file</a>
 		</li>
 	</ul>
 	<hr class="d-sm-none" />

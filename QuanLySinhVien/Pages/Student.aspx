@@ -5,16 +5,25 @@
 <asp:Content ID="content_nav" ContentPlaceHolderID="Navigation" runat="server">
 	<ul class="nav nav-pills flex-column">
 		<li class="nav-item">
-			<a class="nav-link active" href="#">Active</a>
+			<a class="nav-link active" href="#">Xem danh sách sinh viên</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+			<a class="nav-link" href="#">Thêm sinh viên</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
+			<a class="nav-link" href="#">Xóa sinh viên</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link disabled" href="#">Disabled</a>
+			<a class="nav-link" href="#">Thay đổi thông tin sinh viên</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Tìm kiếm sinh viên</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Quản lý nội ngoại trú</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Xuất danh sách ra file</a>
 		</li>
 	</ul>
 	<hr class="d-sm-none" />
@@ -38,7 +47,8 @@
 			<td><%#DataBinder.Eval(Container.DataItem, "ThaoTac") %></td>
 		</ItemTemplate>
 	</asp:DataList>--%>
-	<asp:GridView ID="grid_SinhVien" runat="server" AllowSorting="True" AutoGenerateColumns="false" CssClass="table table-bordered table-striped" OnSorting="grid_SinhVien_Sorting" OnRowCreated="grid_SinhVien_RowCreated">		<Columns>
+	<asp:GridView ID="grid_SinhVien" runat="server" AllowSorting="True" AutoGenerateColumns="false" CssClass="table table-bordered table-striped" OnSorting="grid_SinhVien_Sorting" OnRowCreated="grid_SinhVien_RowCreated">
+		<Columns>
 			<asp:BoundField DataField="STT" HeaderText="Số thứ tự" SortExpression="STT" />
 			<asp:BoundField DataField="MSSV" HeaderText="Mã số sinh viên" SortExpression="MSSV" />
 			<asp:BoundField DataField="Ho" HeaderText="Họ và tên đệm" SortExpression="Ho" />
