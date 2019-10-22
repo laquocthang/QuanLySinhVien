@@ -7,9 +7,9 @@ namespace DataAccess
 	/// </summary>
 	public class YKien
 	{
+		public int MaYKien { get; set; }
 		public string TenYKien { get; set; }
 		public string MoTa { get; set; }
-		public bool DuocDuyet { get; set; } //Ý kiến đã được duyệt để hiển thị
 		public List<ConNguoi> TanThanh { get; set; } //Người tán thành
 		public List<ConNguoi> KhongTanThanh { get; set; } //Người không tán thành
 		public bool DuocXemXet { get; set; } //Ý kiến được xem xét cấp khoa
@@ -19,11 +19,10 @@ namespace DataAccess
 
 		}
 
-		public YKien(string tenYKien, string moTa, bool duocDuyet, List<ConNguoi> tanThanh, List<ConNguoi> khongTanThanh, bool duocXemXet)
+		public YKien(string tenYKien, string moTa, List<ConNguoi> tanThanh, List<ConNguoi> khongTanThanh, bool duocXemXet)
 		{
 			TenYKien = tenYKien;
 			MoTa = moTa;
-			DuocDuyet = duocDuyet;
 			TanThanh = tanThanh;
 			KhongTanThanh = khongTanThanh;
 			DuocXemXet = duocXemXet;

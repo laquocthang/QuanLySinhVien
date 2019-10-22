@@ -32,6 +32,7 @@ namespace DataAccess
 	/// </summary>
 	public abstract class ConNguoi  
 	{
+		public int MaNguoi { get; set; }
 		public string HoTen { get; set; }
 		public DateTime NgaySinh { get; set; }
 		public string CMND { get; set; }
