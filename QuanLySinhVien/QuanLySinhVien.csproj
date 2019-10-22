@@ -250,6 +250,7 @@
     <Content Include="Data\CTK43.csv" />
     <Content Include="Data\Classes.csv" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\laquocthang - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\laquocthang - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
