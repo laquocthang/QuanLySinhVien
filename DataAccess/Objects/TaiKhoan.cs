@@ -23,26 +23,5 @@ namespace DataAccess
 		public string Username { get; set; }
 		public string Password { get; set; }
 		public LoaiTaiKhoan Loai { get; set; }
-
-
-        public static bool Add(TaiKhoan data)
-        {
-            return false;
-        }
-        public static bool Update(TaiKhoan data)
-        {
-            return false;
-        }
-        public static bool Delete(TaiKhoan data)
-        {
-            return false;
-        }
-        public static void Login(TaiKhoan tk)
-        {
-        }
-        public bool Logout()
-        {
-            return true;
-        }
     }
 }

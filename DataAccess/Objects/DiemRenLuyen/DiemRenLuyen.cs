@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccess
 {
@@ -24,7 +20,7 @@ namespace DataAccess
 		Yếu,
 		Kém
 	}
-	
+
 	public enum HọcKỳ
 	{
 		HKI,
@@ -36,36 +32,30 @@ namespace DataAccess
 	/// </summary>
 	public class DiemRenLuyen
 	{
-        public SinhVien SV { get; set; }
+		public SinhVien SV { get; set; }
 		public int TongDiem { get; set; }
 		public XếpLoạiRL XepLoai { get; set; }
 		public HọcKỳ HocKy { get; set; }
 		public int NamHoc { get; set; }
 		public ChiTietDiemRenLuyen ChiTiet { get; set; }
+		public DateTime ThoiGianBD { get; set; }
+		public DateTime ThoiGianKT { get; set; }
 
-        public static int Add(DiemRenLuyen data)
-        {
-            return 0;
-        }
-        public static bool Update(DiemRenLuyen data)
-        {
-            return false;
-        }
-        public bool Update(ChiTietDiemRenLuyen data)
-        {
-            return false;
-        }
-        public static bool Delete(DiemRenLuyen data)
-        {
-            return false;
-        }
-        public static List<DiemRenLuyen> GetAll()
-        {
-            return null;
-        }
-        public static List<DiemRenLuyen> GetList(Condition condition)
-        {
-            return null;
-        }
-    }
+		public DiemRenLuyen()
+		{
+
+		}
+
+		public DiemRenLuyen(SinhVien sV, int tongDiem, XếpLoạiRL xepLoai, HọcKỳ hocKy, int namHoc, ChiTietDiemRenLuyen chiTiet, DateTime thoiGianBD, DateTime thoiGianKT)
+		{
+			SV = sV;
+			TongDiem = tongDiem;
+			XepLoai = xepLoai;
+			HocKy = hocKy;
+			NamHoc = namHoc;
+			ChiTiet = chiTiet;
+			ThoiGianBD = thoiGianBD;
+			ThoiGianKT = thoiGianKT;
+		}
+	}
 }

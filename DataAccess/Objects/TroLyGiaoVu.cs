@@ -11,26 +11,5 @@ namespace DataAccess
 	/// </summary>
 	public class TroLyGiaoVu : ConNguoi
 	{
-
-        public static int Add(TroLyGiaoVu data)
-        {
-            return 0;
-        }
-        public static bool Update(TroLyGiaoVu data)
-        {
-            return false;
-        }
-        public static bool Delete(TroLyGiaoVu data)
-        {
-            return false;
-        }
-        public static List<TroLyGiaoVu> GetAll()
-        {
-            return null;
-        }
-        public static List<TroLyGiaoVu> GetList(Condition condition)
-        {
-            return null;
-        }
     }
 }

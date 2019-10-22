@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DataAccess
 {
@@ -17,38 +13,20 @@ namespace DataAccess
 		public List<ConNguoi> TanThanh { get; set; } //Người tán thành
 		public List<ConNguoi> KhongTanThanh { get; set; } //Người không tán thành
 		public bool DuocXemXet { get; set; } //Ý kiến được xem xét cấp khoa
-        
-        public bool Confirm()
-        {
-            return false;
-        }
-        public bool Pass(bool pass = true)
-        {
-            return false;
-        }
-        public static int Add(YKien data)
-        {
-            return 0;
-        }
-        public static bool Update(YKien data)
-        {
-            return false;
-        }
-        public static bool Delete(YKien data)
-        {
-            return false;
-        }
-        public static List<YKien> GetAll()
-        {
-            return null;
-        }
-        public static List<YKien> GetList(Condition condition)
-        {
-            return null;
-        }
-        public void ExportFile()
-        {
 
-        }
-    }
+		public YKien()
+		{
+
+		}
+
+		public YKien(string tenYKien, string moTa, bool duocDuyet, List<ConNguoi> tanThanh, List<ConNguoi> khongTanThanh, bool duocXemXet)
+		{
+			TenYKien = tenYKien;
+			MoTa = moTa;
+			DuocDuyet = duocDuyet;
+			TanThanh = tanThanh;
+			KhongTanThanh = khongTanThanh;
+			DuocXemXet = duocXemXet;
+		}
+	}
 }

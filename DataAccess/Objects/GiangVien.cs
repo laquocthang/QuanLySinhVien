@@ -51,26 +51,5 @@ namespace DataAccess
 		public HọcHàm HocHam { get; set; }
 		public DateTime NgayBatDau { get; set; }
 		public bool ConDay { get; set; } //Tình trạng giảng dạy của GV: Còn dạy hay Không còn dạy
-
-		public static int Add(GiangVien data)
-		{
-			return 0;
-		}
-		public static bool Update(GiangVien data)
-		{
-			return false;
-		}
-		public static bool Delete(GiangVien data)
-		{
-			return false;
-		}
-		public static List<GiangVien> GetAll()
-		{
-			return null;
-		}
-		public static List<GiangVien> GetList(Condition condition)
-		{
-			return null;
-		}
 	}
 }

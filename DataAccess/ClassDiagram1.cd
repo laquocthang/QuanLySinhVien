@@ -1,192 +1,255 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DataAccess.BiThuDoan" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
+  <Class Name="DataAccess.BaseFunction&lt;T&gt;" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAI=</HashCode>
-      <FileName>BiThuDoan.cs</FileName>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAACAAAEIAAAAAgAAAAAAQAA=</HashCode>
+      <FileName>BaseFunction.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DataAccess.ChiTietDiemRenLuyen" Collapsed="true">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+  <Class Name="DataAccess.BiThuDoan" Collapsed="true">
+    <Position X="5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAb+AQAAAAAAAAAAAAA=</HashCode>
-      <FileName>ChiTietDiemRenLuyen.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\BiThuDoan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.Condition" Collapsed="true">
-    <Position X="7" Y="0.5" Width="1.5" />
+    <Position X="21" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQACAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Condition.cs</FileName>
+      <FileName>Objects\Condition.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.ConNguoi" Collapsed="true">
-    <Position X="1.75" Y="3.5" Width="1.5" />
+    <Position X="3.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAACAAAAAQAAQAACAAGAAAAACAAAAAAAAAIAI=</HashCode>
-      <FileName>ConNguoi.cs</FileName>
+      <FileName>Objects\ConNguoi.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.DataAccessControls" Collapsed="true">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="22.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAgAAAAA=</HashCode>
-      <FileName>DataAccessControls.cs</FileName>
+      <FileName>Objects\DataAccessControls.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.DiaChi" Collapsed="true">
-    <Position X="10.5" Y="0.5" Width="1.5" />
+    <Position X="24.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAAAABAAAEAA=</HashCode>
-      <FileName>DiaChi.cs</FileName>
+      <FileName>Objects\DiaChi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.ChiTietDiemRenLuyen" Collapsed="true">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAb+AQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\DiemRenLuyen\ChiTietDiemRenLuyen.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.DiemRenLuyen" Collapsed="true">
-    <Position X="5.25" Y="1.5" Width="1.5" />
+    <Position X="19.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAEEIAAAAAgAADAAAAAY=</HashCode>
-      <FileName>DiemRenLuyen.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAIAAAAAAAgDACAAIQ=</HashCode>
+      <FileName>Objects\DiemRenLuyen\DiemRenLuyen.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.GiangVien" Collapsed="true">
-    <Position X="1.75" Y="0.5" Width="1.5" />
+    <Position X="6" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAZEEAAAAACAAAAAAAAAAAAAAAEAAAAAAgAAAIAAAAI=</HashCode>
-      <FileName>GiangVien.cs</FileName>
+      <HashCode>EABEEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Objects\GiangVien.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.GVCN" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+    <Position X="7.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAQAAAI=</HashCode>
-      <FileName>GVCN.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Objects\GVCN.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.HoatDongPhongTrao" Collapsed="true">
-    <Position X="7" Y="1.5" Width="1.5" />
+    <Position X="21" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAiAAIAAACAAAAAAAAEAAAAAAgAAAAAAAAI=</HashCode>
-      <FileName>HoatDongPhongTrao.cs</FileName>
+      <HashCode>AAAAAAACAAiAAIAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\HoatDongPhongTrao\HoatDongPhongTrao.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.KhaoSat" Collapsed="true">
-    <Position X="8.75" Y="1.5" Width="1.5" />
+    <Position X="22.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>KhaoSat.cs</FileName>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAACAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Objects\KhaoSat\KhaoSat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.LopHoc" Collapsed="true">
-    <Position X="10.5" Y="1.5" Width="1.5" />
+    <Position X="24.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AA4AAAAAAAAACAAAAAAAAAAAAAEAAAAAAgIAAACAAII=</HashCode>
-      <FileName>LopHoc.cs</FileName>
+      <HashCode>AAgAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAACAAIA=</HashCode>
+      <FileName>Objects\LopHoc\LopHoc.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.SinhVien" Collapsed="true">
     <Position X="0.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAIAAAAAAAIAAAAAAAEAAAAAAhAAAEAAAAI=</HashCode>
-      <FileName>SinhVien.cs</FileName>
+      <HashCode>AAAAAAAAAAIAAAAAAAIAAAAAAAAAAAAAABAAAEAAAAA=</HashCode>
+      <FileName>Objects\SinhVien\SinhVien.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.TaiKhoan" Collapsed="true">
-    <Position X="5.25" Y="2.5" Width="1.5" />
+    <Position X="19.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYEAAAAAAAAAAAAAQAAAAAAAAEAAAACAgAAAAAAAAI=</HashCode>
-      <FileName>TaiKhoan.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\TaiKhoan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.TaiNguyen" Collapsed="true">
-    <Position X="7" Y="2.5" Width="1.5" />
+    <Position X="21" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAgAAAAAAgAgAIAAAAEAAAAAAgAAAAAAAAI=</HashCode>
-      <FileName>TaiNguyen.cs</FileName>
+      <HashCode>AAAAAAAAAAgAAAAAAgAgAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\TaiNguyenHocTap\TaiNguyen.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.ThongBao" Collapsed="true">
-    <Position X="8.75" Y="2.5" Width="1.5" />
+    <Position X="22.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAgAAAAAAgACAABAAAEAAAAAAgAAAAAAAMI=</HashCode>
-      <FileName>ThongBao.cs</FileName>
+      <HashCode>AAAAAAAAAAgAAAAAAgACAABAAAAAAAAAAAAAAAAAAMA=</HashCode>
+      <FileName>Objects\ThongBao\ThongBao.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.TroLyGiaoVu" Collapsed="true">
     <Position X="2.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAI=</HashCode>
-      <FileName>TroLyGiaoVu.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\TroLyGiaoVu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DataAccess.YKien" Collapsed="true">
-    <Position X="10.5" Y="2.5" Width="1.5" />
+    <Position X="24.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAYAAAAAAAgAAAAEAAAAAAAAAQEAAAAAAgAAgAAIAAI=</HashCode>
-      <FileName>YKien.cs</FileName>
+      <HashCode>AAAAAAAAAAgAAAAEAAAAAAAAAQAAAAAAAAAAgAAIAAA=</HashCode>
+      <FileName>Objects\YKien\YKien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Objects.QuanLyDiemRenLuyen" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAZAAAAAAAAAAAAAAAAAAACAAAEIAACAAgAAAAACQAA=</HashCode>
+      <FileName>Objects\DiemRenLuyen\QuanLyDiemRenLuyen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Objects.QuanLyHoatDongPhongTrao" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAIAAAAAAAAAAAQACAAEEIAAAAAgAAAAAAQQA=</HashCode>
+      <FileName>Objects\HoatDongPhongTrao\QuanLyHoatDongPhongTrao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Objects.QuanLyKhaoSat" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAACAAAEIAAAAAgAAAAAAQAA=</HashCode>
+      <FileName>Objects\KhaoSat\QuanLyKhaoSat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Objects.QuanLyLopHoc" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAACAAAEIAAAAAgAAAAAAQAA=</HashCode>
+      <FileName>Objects\LopHoc\QuanLyLopHoc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Objects.QuanLySinhVien" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAACAAAEIAAAAAgAAAAAAQAA=</HashCode>
+      <FileName>Objects\SinhVien\QuanLySinhVien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Objects.QuanLyTaiNguyenHocTap" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAACAAAEIAAAAAgAAAAAAQAA=</HashCode>
+      <FileName>Objects\TaiNguyenHocTap\QuanLyTaiNguyenHocTap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Objects.QuanLyThongBao" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAACAAAEIAAAAAgAAAAAAQAA=</HashCode>
+      <FileName>Objects\ThongBao\QuanLyThongBao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataAccess.Objects.QuanLyYKien" Collapsed="true">
+    <Position X="16.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAABgAABAAAAAAAACAAAEIAAAAAgAAAAAAQAA=</HashCode>
+      <FileName>Objects\YKien\QuanLyYKien.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="DataAccess.GioiTinh" Collapsed="true">
-    <Position X="8.75" Y="3.75" Width="1.5" />
+    <Position X="22.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIAAAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ConNguoi.cs</FileName>
+      <FileName>Objects\ConNguoi.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="DataAccess.TonGiao" Collapsed="true">
-    <Position X="10.5" Y="4.5" Width="1.5" />
+    <Position X="24.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAQAAgAAQEAACAAAAAQAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ConNguoi.cs</FileName>
+      <FileName>Objects\ConNguoi.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="DataAccess.XếpLoạiRL" Collapsed="true">
-    <Position X="5.25" Y="5.25" Width="1.5" />
+    <Position X="19.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACIAAAAAAAAAAAAAAAAAABIAAAIAEAAA=</HashCode>
-      <FileName>DiemRenLuyen.cs</FileName>
+      <FileName>Objects\DiemRenLuyen\DiemRenLuyen.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="DataAccess.HọcKỳ" Collapsed="true">
-    <Position X="5.25" Y="4.5" Width="1.5" />
+    <Position X="19.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAA=</HashCode>
-      <FileName>DiemRenLuyen.cs</FileName>
+      <FileName>Objects\DiemRenLuyen\DiemRenLuyen.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="DataAccess.BộMôn" Collapsed="true">
-    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Position X="19.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAQIA=</HashCode>
-      <FileName>GiangVien.cs</FileName>
+      <FileName>Objects\GiangVien.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="DataAccess.HọcVị" Collapsed="true">
-    <Position X="7" Y="4.5" Width="1.5" />
+    <Position X="21" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAGAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAABAAA=</HashCode>
-      <FileName>GiangVien.cs</FileName>
+      <FileName>Objects\GiangVien.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="DataAccess.HọcHàm" Collapsed="true">
-    <Position X="10.5" Y="3.75" Width="1.5" />
+    <Position X="24.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAAAAAAABAAAAAAEAAAAAAAAAAAA=</HashCode>
-      <FileName>GiangVien.cs</FileName>
+      <FileName>Objects\GiangVien.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="DataAccess.LoaiTaiKhoan" Collapsed="true">
-    <Position X="8.75" Y="4.5" Width="1.5" />
+    <Position X="22.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAABAAEAAAAAAAAAAAAAAAAAAAAEAAE=</HashCode>
-      <FileName>TaiKhoan.cs</FileName>
+      <FileName>Objects\TaiKhoan.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="DataAccess.ĐộƯuTiên" Collapsed="true">
-    <Position X="7" Y="3.75" Width="1.5" />
+    <Position X="21" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ThongBao.cs</FileName>
+      <FileName>Objects\ThongBao\ThongBao.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

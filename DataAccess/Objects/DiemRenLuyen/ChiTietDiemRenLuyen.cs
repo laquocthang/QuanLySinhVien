@@ -106,5 +106,10 @@
 		/// 024. Đạt thành tích trong học tập, rèn luyện (được tặng bằng khen, giấy khen, chứng nhận, thư khen của các cấp) 2đ
 		/// </summary>
 		public int M024 = 0;
+
+		public ChiTietDiemRenLuyen()
+		{
+
+		}
 	}
 }

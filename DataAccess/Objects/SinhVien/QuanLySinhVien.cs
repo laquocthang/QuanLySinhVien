@@ -1,32 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccess.Objects
 {
-    class QuanLySinhVien : BaseFunction<SinhVien>
-    {
-        public override int Add(SinhVien data)
-        {
-            return 0;
-        }
-        public override bool Update(SinhVien data)
-        {
-            return false;
-        }
-        public override bool Delete(SinhVien data)
-        {
-            return false;
-        }
-        public static List<SinhVien> GetAll()
-        {
-            return null;
-        }
-        public static List<SinhVien> GetList(Condition condition)
-        {
-            return null;
-        }
-    }
+	public class QuanLySinhVien : BaseFunction<SinhVien>
+	{
+		public override int Add(SinhVien item)
+		{
+			throw new NotImplementedException();
+		}
+
+		public override bool Delete(SinhVien item)
+		{
+			throw new NotImplementedException();
+		}
+
+		public override List<SinhVien> GetAll()
+		{
+			throw new NotImplementedException();
+		}
+
+		public override List<SinhVien> Find(Condition condition)
+		{
+			throw new NotImplementedException();
+		}
+
+		public override bool Update(SinhVien item)
+		{
+			throw new NotImplementedException();
+		}
+
+		public override void ExportFile()
+		{
+			throw new NotImplementedException();
+		}
+
+		public override SinhVien Single(Condition condition)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

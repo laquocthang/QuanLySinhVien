@@ -30,7 +30,5 @@ namespace DataAccess
 		/// Địa chỉ chi tiết, bổ sung thêm bên cạnh các thông tin trên
 		/// </summary>
 		public string ChiTiet { get; set; }
-
-        
     }
 }

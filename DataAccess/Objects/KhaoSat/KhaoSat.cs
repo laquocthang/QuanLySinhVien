@@ -1,13 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataAccess
+﻿namespace DataAccess
 {
 	public class KhaoSat
 	{
+		public string TenKS;
+		public string MoTa;
+		public string Link;
 
+		public KhaoSat()
+		{
+
+		}
+
+		public KhaoSat(string tenKS, string moTa, string link)
+		{
+			TenKS = tenKS;
+			MoTa = moTa;
+			Link = link;
+		}
 	}
 }
